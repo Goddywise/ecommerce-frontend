@@ -1,0 +1,291 @@
+:root{
+    --main-width:1150px
+}
+main,body{
+    background-color: #f2f2f2;
+}
+.banner{
+    padding:20px 0;
+    display: flex;
+    height:420px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner > div{
+    display: flex;
+    height: 100%;;
+    gap:15px;
+    width: var(--main-width);
+}
+
+.banner > div > div:first-child{
+    width:200px;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    background-color: var(--white-color);
+    padding:10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px .2px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.banner > div > div:first-child > a{
+    color:#222;
+    font-size:13px
+}
+
+.banner-slide{
+    display: flex;
+    gap:15px;
+    /* border:1px solid red; */
+    flex: 1 5;
+    overflow: hidden;
+}
+
+.banner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1;
+    /* background-color: blue; */
+}
+.banner-div > img{
+    height: 100%;
+    object-fit: cover;
+}
+.side-ad{
+    width: 213px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.side-ad > a > img{
+    width: 100%;
+    object-fit: cover;
+    border-radius:2px;
+}
+
+.top-selling{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.top-selling > div{
+    width:var(--main-width);
+    height: 320px;
+    background-color: var(--white-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+    gap:10px;
+}
+
+.top-selling > div > p{
+    padding:0 15px;
+}
+
+.top-selling > div > div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:6px;
+    padding:0 6px;
+}
+
+.top-selling > div > div >a{
+    /* border:1px solid red; */
+    overflow: hidden;
+
+}
+
+.top-selling > div > div > a > img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.top-selling > div > div > a > div > span{
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+.top-selling > div >div > a > div > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15px 15px;
+    gap:5px;
+}
+.top-selling > div > div > a > div >div > span:nth-child(2){
+    font-size: 12px;
+    color:grey;
+    text-decoration: line-through;
+}
+
+.top-selling > div > div > a >div > div > span::before{
+    content: "#";
+    position: relative;
+}
+.other-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+/* .other-products > div{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    width:var(--main-width);
+    border:1px solid red;
+    background-color: var(--white-color); */
+    
+    .other-products > div{
+        width:var(--main-width);
+        height: auto;
+        background-color: var(--white-color);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr;
+        gap:10px;
+    }
+
+    .other-products > div > p{
+        padding:0 15px;
+    }
+
+    .other-products > div > div{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        gap:6px;
+        padding:0 6px;
+    }
+    
+    .other-products > div > div >a{
+        /* border:1px solid red; */
+        overflow: hidden;
+    
+    }
+    
+    .other-products > div > div > a > img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    .other-products > div > div > a > div > span{
+        font-size: 13px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+    }
+    .other-products > div >div > a > div > div{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 15px 15px;
+        gap:5px;
+    }
+    .other-products > div > div > a > div >div > span:nth-child(2){
+        font-size: 12px;
+        color:grey;
+        text-decoration: line-through;
+    }
+    
+    .other-products > div > div > a >div > div > span::before{
+        content: "#";
+        position: relative;
+    }
+/* .other-products > div > *{
+    width:100%
+} */
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.brands > div{
+        width:var(--main-width);
+        height: auto;
+        background-color: var(--white-color);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr;
+        gap:10px;
+    }
+    
+    .brands > div > p{
+        padding:0 15px;
+    }
+    .brands > div > div{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap:6px;
+        padding:0 6px;
+    }
+    
+    .brands > div > div >a{
+        /* border:1px solid red; */
+        overflow: hidden;
+    
+    }
+    
+    .brands > div > div > a > img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    .brands > div > div > a > div > span{
+        font-size: 13px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+    }
+    .brands > div >div > a > div > div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15px 15px;
+        gap:5px;
+    }
+    .brands > div > div > a > div >div > span:nth-child(2){
+        font-size: 12px;
+        color:grey;
+        text-decoration: line-through;
+    }
+    
+    .brands > div > div > a >div > div > span::before{
+        content: "#";
+        position: relative;
+    }
+
+@media screen and (width <= 1200px){
+    :root{
+        --main-width: 950px;
+    }
+    .top-selling > div > div{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:6px;
+    }
+    .medium-screen{
+        display: none;
+    }
+    .side-ad{
+        display: none;
+    }
+}
