@@ -9,7 +9,7 @@ const app = express();
 app.use([express.static(__dirname),cors(),bodyParser.json()]);
 //app.use('*',middleware);
 
-app.get('/',homeRoutes);
+app.get('/*',homeRoutes);
 
 
 app.listen(process.env.PORT || 5000,()=>{
